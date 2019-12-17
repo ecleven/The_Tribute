@@ -3,17 +3,23 @@
 <head>
 <style>
 body { 
-  background-image: url("/static/39646.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size:200%;
+  background-image: url("/static/ramos_1.png"),url("/static/39646.jpg");
+  background-repeat: repeat,no-repeat;
+  background-position: center,center;
+  background-attachment: scroll,fixed;
+  background-size: 20vw,auto;
 </style>
 </head>
 <body>
 
-<h1>The background-position Property</h1>
-<p>Test</p>
+<div>
+
+    {% for image_name in image_names %}
+    <div>
+        <img class="img-responsive" src=" {{url_for('send_image', filename=image_name)}}" class="center"> 
+    </div>
+    {% endfor %}
+</div>
 
 </body>
 </html>
