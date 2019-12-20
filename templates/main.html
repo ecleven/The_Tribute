@@ -3,7 +3,7 @@
 <head>
 <style>
 body { 
-  background-image: url("/static/ramos_1.png"),url("/static/39646.jpg");
+  background-image: url("/static/ramos_mural.png"),url("/static/39646.jpg");
   background-repeat: repeat,no-repeat;
   background-position: center,center;
   background-attachment: scroll,fixed;
@@ -15,6 +15,7 @@ body {
 <div>
 
     {% for image_name in image_names %}
+    
     <div>
         <img class="img-responsive" src=" {{url_for('send_image', filename=image_name)}}" class="center"> 
     </div>
