@@ -14,10 +14,12 @@ body {
 
 <div>
 
-    {% for image_name in image_names %}
+    {% for bro in da_bros %}
     
     <div>
-        <img class="img-responsive" src=" {{url_for('send_image', filename=image_name)}}" class="center"> 
+        <h1><font color="white"> {{ bro['name'] }} </font></h1>
+        <img class="img-responsive" src=" {{url_for('send_image', filename=bro['image'])}}" class="center">
+        <p><font color="white"> {{ bro['bio'] }} </font></p>
     </div>
     {% endfor %}
 </div>
