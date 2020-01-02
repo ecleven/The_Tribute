@@ -1,3 +1,6 @@
+{% extends "layout.html" %}
+{% block content %}
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,14 +12,12 @@ body {
   background-attachment: scroll,fixed;
   background-size: 50vw,auto;
 }
-
 img {
   border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
   width: 20vw;
 }
-
 .bio {
   border-style: ridge;
   border-color: rgba(255, 205, 0);
@@ -31,7 +32,6 @@ img {
   margin-left: 8vw;
   margin-right: 8vw;
 }
-
 </style>
 </head>
 <body>
@@ -50,3 +50,4 @@ img {
 
 </body>
 </html>
+{% endblock content %}
