@@ -1,7 +1,18 @@
+.ramos_bg { 
+  background-image: url("/static/ramos_mural.png"),url("/static/39646.jpg");
+  background-repeat: repeat,repeat;
+  background-position: center,center;
+  background-attachment: scroll,fixed;
+  background-size: 50vw,auto;
+}
+
 body {
-    background: #fafafa;
-    color: #333333;
-    margin-top: 5rem;
+  background-image: url("/static/ramos_mural.png"),url("/static/39646.jpg");
+  background-repeat: repeat,repeat;
+  background-position: center,center;
+  background-attachment: scroll,fixed;
+  background-size: 50vw,auto;
+  margin-top: 5rem;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -31,6 +42,7 @@ body {
     border: 1px solid #dddddd;
     border-radius: 3px;
     margin-bottom: 20px;
+    opacity: .95;
   }
   
   .article-title {

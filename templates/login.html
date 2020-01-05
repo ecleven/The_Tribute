@@ -1,6 +1,16 @@
 
 {% extends "layout.html" %}
 {% block content %}
+<style>
+body { 
+    background-image: url("/static/ramos_mural.png"),url("/static/39646.jpg");
+    background-repeat: repeat,repeat;
+    background-position: center,center;
+    background-attachment: scroll,fixed;
+    background-size: 50vw,auto;
+  }
+</style>
+<body>
     <div class="content-section">
         <form method="POST" action="">
             {{ form.hidden_tag() }}
@@ -50,4 +60,5 @@
             Need An Account? <a class="ml-2" href="{{ url_for('register') }}">Sign Up Now</a>
         </small>
     </div>
+</body>
 {% endblock content %}

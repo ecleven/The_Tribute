@@ -1,6 +1,4 @@
 from flask import Flask, render_template, send_from_directory, session, url_for, flash, redirect
-from flask_bcrypt import Bcrypt
- 
 from forms import RegistrationForm, LoginForm
 import os
 
@@ -45,7 +43,7 @@ def login():
 
 @app.route('/')
 def home():
-    return render_template("main.html", da_bros=da_bros)
+    return render_template("main.html", da_bros=da_bros, title='Da Bros')
 
 @app.route('/upload/<filename>')
 def send_image(filename):
